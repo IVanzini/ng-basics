@@ -1,0 +1,28 @@
+<ul>
+    <li *ngFor="let calciatore of calciatori" class="box" 
+    [ngClass]="{'selezionato': calciatoreSelezionato == calciatore, 'destro': calciatore.piede == 'destro',  'sinistro': calciatore.piede == 'sinistro'}">
+        {{calciatore.nome_completo}}
+        <button type="button" (click)="seleziona(calciatore)">Seleziona</button>
+    </li>
+</ul>
+<button type="button" (click)="seleziona(undefined)">Svuota</button>
+<div *ngIf="calciatoreSelezionato">
+    <h2>Nome: {{calciatoreSelezionato.nome_completo}}</h2>
+    <h2>Squadra: {{calciatoreSelezionato.squadra}}</h2>
+    <img [src]="calciatoreSelezionato.foto" alt="">
+    <app-piede [piede]="calciatoreSelezionato.piede"></app-piede>
+</div>
+<!-- <div class="box" *ngFor="let calciatore of calciatori">
+    <h2>Nome: {{calciatore.nome_completo}}</h2>
+    <h2>Squadra: {{calciatore.squadra}}</h2>
+    <img [src]="calciatore.foto" alt="">
+    <div>
+    <input type="text" placeholder="piede" [(ngModel)]="calciatore.piede">
+    {{calciatore.piede}}
+    </div>
+    <div *ngIf="calciatore.piede =='destro' || calciatore.piede =='ambidestro'" class="box destro">D</div>
+    <div *ngIf="calciatore.piede =='sinistro' || calciatore.piede =='ambidestro'" class="box sinistro">S</div>
+    <pre>
+    {{calciatore | json}}
+    </pre>
+</div> -->

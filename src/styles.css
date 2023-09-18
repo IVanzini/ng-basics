@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: bisque;
+}
+
+.box {
+    border: 1px solid black;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.piede {
+    width: 3rem;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.destro {
+    border: 5px solid green;
+}
+
+.sinistro {
+    border: 5px solid red;
+}
+
+.selezionato {
+    background-color: yellow;
+}
+
+.bg-destro {
+   background-color: lightgreen; 
+}
+
+.bg-sinistro {
+    background-color: red; 
+ }
+
