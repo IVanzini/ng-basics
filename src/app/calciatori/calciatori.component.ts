@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Calciatore } from "../models/calciatore";
-import {CALCIATORI} from "../dati/serie_a";
+import { CALCIATORI } from "../dati/serie_a";
 
 @Component({
   selector: 'app-calciatori',
