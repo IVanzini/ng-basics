@@ -1,0 +1,11 @@
+<h1>Todo List</h1>
+<div *ngIf="todos.length == 0">
+    Caricamento in corso...
+</div>
+<div class="list-group">
+    <app-todo-item *ngFor="let t of todos" [todo]="t" class="list-group-item" [ngClass]="{'bg-success': t.completed}" 
+    (onRichiestaCompletamento)="completa($event)"></app-todo-item>
+</div>
+<hr>
+<app-todo-add (onRichiestaInserimento)="inserisci($event)"></app-todo-add>
+<!-- <pre>{{ todos | json }}</pre> -->

@@ -1,0 +1,4 @@
+<div *ngIf="todo" class="d-flex justify-content-between" >
+    {{ todo.text }}
+    <button *ngIf="!todo.completed" type="button" class="btn btn-primary" (click)="richiediCompletamento()">Completa</button>
+</div>
