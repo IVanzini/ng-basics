@@ -30,9 +30,21 @@
 
 .bg-sinistro {
     background-color: red; 
- }
+}
 
- .bg-dispari {
+.bg-dispari {
    background-color: grey; 
- }
+}
+
+.bg-invoice {
+    background-color: green;
+}
+
+.bg-withdrawal {
+    background-color: grey; 
+}
+
+.bg-amount {
+    background-color: orange;        
+}
 

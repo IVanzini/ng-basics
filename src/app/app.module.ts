@@ -12,6 +12,8 @@ import {BsDatepickerModule}  from "ngx-bootstrap/datepicker";
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { TodoItemComponent } from './todo-item/todo-item.component';
 import { TodoAddComponent } from './todo-add/todo-add.component';
+import { TransactionListComponent } from './transaction-list/transaction-list.component';
+import { TransactionDetailComponent } from './transaction-detail/transaction-detail.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { TodoAddComponent } from './todo-add/todo-add.component';
     CalciatoreDetailComponent,
     TodoListComponent,
     TodoItemComponent,
-    TodoAddComponent
+    TodoAddComponent,
+    TransactionListComponent,
+    TransactionDetailComponent
   ],
   imports: [
     BrowserModule,

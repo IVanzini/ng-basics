@@ -1,0 +1,8 @@
+<div *ngIf="transaction">
+    <h5>{{transaction.business}}</h5>
+    <p>{{transaction.name}}</p>
+    <p>Account: {{transaction.account}}</p>
+    <p>Date: {{transaction.date*1000 | date}}</p>
+    <p>Type: {{transaction.type}}</p>
+    <p [ngClass]="{'bg-amount': transaction.amount>700}">Amount: {{transaction.amount | currency}}</p>
+</div>
