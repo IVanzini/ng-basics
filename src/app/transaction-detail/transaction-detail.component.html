@@ -5,4 +5,7 @@
     <p>Date: {{transaction.date*1000 | date}}</p>
     <p>Type: {{transaction.type}}</p>
     <p [ngClass]="{'bg-amount': transaction.amount>700}">Amount: {{transaction.amount | currency}}</p>
+    <button class="btn btn-danger" (click)="richiediEliminazione()">
+        <i class="bi bi-trash3-fill"></i>Elimina
+    </button>
 </div>

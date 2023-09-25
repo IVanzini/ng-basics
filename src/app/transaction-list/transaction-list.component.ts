@@ -13,4 +13,11 @@ export class TransactionListComponent implements OnInit {
   ngOnInit(): void {
     this.transactions = TRANSACTIONS;
   }
+
+  eliminaTransazione(t: Transaction) {
+    const i = TRANSACTIONS.indexOf(t);
+    if (i > -1) {
+      this.transactions.splice(i, 1);
+    }
+  }
 }

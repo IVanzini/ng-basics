@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Transaction } from '../models/transaction';
 
 @Component({
@@ -9,4 +9,13 @@ import { Transaction } from '../models/transaction';
 export class TransactionDetailComponent {
   @Input()
   transaction?: Transaction;
+
+  @Output()
+  onRichiestaEliminazione = new EventEmitter<Transaction>();
+
+  richiediEliminazione() {
+    if (confirm("Sei sicuro di voler eliminare la transazione?")) {
+      this.onRichiestaEliminazione.emit(this.transaction);
+    }
+  }
 }

@@ -1,6 +1,7 @@
 <h1 style="text-align: center;">Transactions</h1>
 <div class="list-group">
     <app-transaction-detail *ngFor="let t of transactions" [transaction]="t" class="list-group-item" 
-    [ngClass]="{'bg-invoice': t.type == 'invoice', 'bg-withdrawal': t.type == 'withdrawal'}"></app-transaction-detail>
+    [ngClass]="{'bg-invoice': t.type == 'invoice', 'bg-withdrawal': t.type == 'withdrawal'}"
+    (onRichiestaEliminazione)="eliminaTransazione($event)"></app-transaction-detail>
 </div>
 
