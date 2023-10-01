@@ -1,0 +1,5 @@
+<h1 >Posts</h1>
+<app-post-categories></app-post-categories>
+<div class="list-group">
+    <app-post-detail class="list-group-item" *ngFor="let p of postService.posts" [post]="p"></app-post-detail>
+</div>

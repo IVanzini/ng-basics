@@ -14,6 +14,11 @@ import { TodoItemComponent } from './todo-item/todo-item.component';
 import { TodoAddComponent } from './todo-add/todo-add.component';
 import { TransactionListComponent } from './transaction-list/transaction-list.component';
 import { TransactionDetailComponent } from './transaction-detail/transaction-detail.component';
+import { PostListComponent } from './components/post-list/post-list.component';
+import { PostDetailComponent } from './components/post-detail/post-detail.component';
+import { FavoritesListComponent } from './components/favorites-list/favorites-list.component';
+import { FavoritesDetailComponent } from './components/favorites-detail/favorites-detail.component';
+import { PostCategoriesComponent } from './components/post-categories/post-categories.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +31,12 @@ import { TransactionDetailComponent } from './transaction-detail/transaction-det
     TodoItemComponent,
     TodoAddComponent,
     TransactionListComponent,
-    TransactionDetailComponent
+    TransactionDetailComponent,
+    PostListComponent,
+    PostDetailComponent,
+    FavoritesListComponent,
+    FavoritesDetailComponent,
+    PostCategoriesComponent
   ],
   imports: [
     BrowserModule,

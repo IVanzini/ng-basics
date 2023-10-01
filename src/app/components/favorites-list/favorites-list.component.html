@@ -1,0 +1,6 @@
+<h1 >Preferiti</h1>
+<div class="list-group">
+    <app-favorites-detail class="list-group-item" *ngFor="let f of postService.favorites" [favorite]="f"></app-favorites-detail>
+</div>
+<button type="button" class="btn btn-danger" (click)="postService.svuota()">Svuota</button>
+<hr>

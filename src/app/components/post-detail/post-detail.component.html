@@ -1,0 +1,7 @@
+<div *ngIf="post">
+    <h3>{{post.title}}</h3>
+    <p>{{post.category}}</p>
+    <p>Data pubblicazione: {{post.date | date}}</p>
+    <p>{{post.body}}</p>
+    <button type="button" class="btn btn-primary" (click)="postService.aggiungi(post)">Aggiungi a preferiti</button>
+</div>

@@ -1,0 +1,4 @@
+<div class="btn-group" role="group" *ngIf="postService.categories.length > 0">
+    <button *ngFor="let c of postService.categories" type="button" class="btn btn-outline-primary" 
+    (click)="postService.getPostsByCategory(c.id)" [ngClass]="{'button-selected': postService.selectedCategory == c.id}">{{c.title}}</button> 
+</div>

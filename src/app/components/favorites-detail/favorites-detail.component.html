@@ -1,0 +1,6 @@
+<div *ngIf="favorite">
+    {{favorite.title}}
+    <button type="button" class="btn btn-danger" (click)="postService.rimuovi(favorite.id)">
+        <i class="bi bi-trash"></i>
+    </button>
+</div>
