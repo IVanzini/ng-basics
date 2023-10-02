@@ -13,7 +13,6 @@ export class PostCategoriesComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    //console.log("qui");
     this.postService.getAllCategories();
   }
 }

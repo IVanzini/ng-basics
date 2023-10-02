@@ -1,5 +1,5 @@
 export interface Blog {
-  posts: Post[];
+  //posts: Post[];
   postCategories: PostCategory[];
 }
 
